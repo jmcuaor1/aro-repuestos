@@ -889,23 +889,25 @@ function Hero() {
         </div>
 
         {/* Product mosaic */}
-        <div className="hidden lg:grid grid-cols-2 gap-3">
+        <div className="hidden lg:grid grid-cols-2 auto-rows-[155px] gap-3">
           {[
             '/olla-presion/manijas/manija-olla-express-roja.jpg',
             '/licuadora/bases/base-samurai.jpg',
             '/olla-presion/cauchos/caucho-panex-silicona-4-6-litros.jpg',
-            '/licuadora/cuchillas/cuchilla-samurai-original.jpg',
+            '/olla-presion/pitos-valvulas/pito-imusa-original.jpg',
           ].map((url, i) => (
             <div
               key={i}
-              className={`overflow-hidden rounded bg-[#2A2E34] ${i === 0 ? 'row-span-2' : ''}`}
+              className={`relative overflow-hidden rounded bg-[#2A2E34] ${i === 0 ? 'row-span-2' : ''}`}
             >
               <img
                 src={url}
                 alt="Repuesto ARO"
-                className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-500"
-                style={{ minHeight: i === 0 ? '320px' : '155px' }}
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 w-full h-full object-cover grayscale-[55%] contrast-110 opacity-70 group-hover:opacity-100 hover:!grayscale-0 hover:!opacity-100 hover:scale-105 transition-all duration-500"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F23]/70 via-transparent to-transparent pointer-events-none" />
             </div>
           ))}
         </div>
@@ -1380,7 +1382,7 @@ function About() {
           <div className="relative hidden lg:block">
             <div className="grid grid-cols-2 gap-3">
               <img
-                src="/olla-presion/manijas/manija-corona-original.jpg"
+                src="/licuadora/tapas/tapa-samurai.jpg"
                 alt="Fabricación"
                 loading="lazy"
                 decoding="async"
@@ -1388,7 +1390,7 @@ function About() {
               />
               <div className="flex flex-col gap-3 pt-8">
                 <img
-                  src="/olla-presion/pitos-valvulas/pito-imusa-original.jpg"
+                  src="/licuadora/cuchillas/cuchilla-corona.jpg"
                   alt="Inventario"
                   loading="lazy"
                   decoding="async"
