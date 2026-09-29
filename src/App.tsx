@@ -828,7 +828,7 @@ function Hero() {
       <div
         className="absolute inset-0 opacity-20"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?w=1600&h=900&fit=crop&auto=format')`,
+          backgroundImage: `url('/olla-presion/pitos-valvulas/pito-campana-universal-original.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -891,10 +891,10 @@ function Hero() {
         {/* Product mosaic */}
         <div className="hidden lg:grid grid-cols-2 gap-3">
           {[
-            'https://images.unsplash.com/photo-1548683726-203119be6a39?w=500&h=500&fit=crop&auto=format',
-            'https://images.unsplash.com/photo-1625464733985-753756e466c5?w=500&h=500&fit=crop&auto=format',
-            'https://images.unsplash.com/photo-1759790475932-ac8c04b17727?w=500&h=500&fit=crop&auto=format',
-            'https://images.unsplash.com/photo-1769147339214-076740872485?w=500&h=500&fit=crop&auto=format',
+            '/olla-presion/manijas/manija-olla-express-roja.jpg',
+            '/licuadora/bases/base-samurai.jpg',
+            '/olla-presion/cauchos/caucho-panex-silicona-4-6-litros.jpg',
+            '/licuadora/cuchillas/cuchilla-samurai-original.jpg',
           ].map((url, i) => (
             <div
               key={i}
@@ -959,7 +959,7 @@ function Categories() {
           <div className="bg-white rounded-sm overflow-hidden group">
             <div className="relative h-48 overflow-hidden bg-[#1C1F23]">
               <img
-                src="https://images.unsplash.com/photo-1625464733985-753756e466c5?w=800&h=400&fit=crop&auto=format"
+                src="/licuadora/bases/base-oster-6-puntas.jpg"
                 alt="Repuestos para licuadoras"
                 loading="lazy"
                 decoding="async"
@@ -994,7 +994,7 @@ function Categories() {
           <div className="bg-white rounded-sm overflow-hidden group">
             <div className="relative h-48 overflow-hidden bg-[#1C1F23]">
               <img
-                src="https://images.unsplash.com/photo-1548683726-203119be6a39?w=800&h=400&fit=crop&auto=format"
+                src="/olla-presion/manijas/manija-olla-express-negra.jpg"
                 alt="Repuestos para ollas a presión"
                 loading="lazy"
                 decoding="async"
@@ -1231,7 +1231,7 @@ function Wholesale() {
       <div
         className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1730584474338-aa8d9d186bf7?w=1600&h=900&fit=crop&auto=format')`,
+          backgroundImage: `url('/olla-presion/cauchos/caucho-panex-azul-siliconado-8-10-litros.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -1275,7 +1275,7 @@ function Wholesale() {
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-[#E4751F]/30" />
             <div className="relative bg-[#2A2E34] rounded-sm overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1735494033576-9c882e80504c?w=700&h=500&fit=crop&auto=format"
+                src="/licuadora/acoples/acople-universal.jpg"
                 alt="Fabricación ARO"
                 loading="lazy"
                 decoding="async"
@@ -1341,7 +1341,7 @@ function Distributors() {
             </div>
             <div className="relative overflow-hidden bg-[#1C1F23] min-h-64">
               <img
-                src="https://images.unsplash.com/photo-1759790475932-ac8c04b17727?w=700&h=600&fit=crop&auto=format"
+                src="/licuadora/empaques/empaque-samurai.jpg"
                 alt="Empaques y repuestos para distribución"
                 loading="lazy"
                 decoding="async"
@@ -1380,7 +1380,7 @@ function About() {
           <div className="relative hidden lg:block">
             <div className="grid grid-cols-2 gap-3">
               <img
-                src="https://images.unsplash.com/photo-1730584474338-aa8d9d186bf7?w=500&h=600&fit=crop&auto=format"
+                src="/olla-presion/manijas/manija-corona-original.jpg"
                 alt="Fabricación"
                 loading="lazy"
                 decoding="async"
@@ -1388,7 +1388,7 @@ function About() {
               />
               <div className="flex flex-col gap-3 pt-8">
                 <img
-                  src="https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?w=500&h=300&fit=crop&auto=format"
+                  src="/olla-presion/pitos-valvulas/pito-imusa-original.jpg"
                   alt="Inventario"
                   loading="lazy"
                   decoding="async"
