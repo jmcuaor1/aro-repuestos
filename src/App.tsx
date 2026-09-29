@@ -1137,7 +1137,7 @@ function Catalog() {
           {filtered.map(product => (
             <div
               key={product.id}
-              className="group bg-[#F5F4F1] rounded-sm overflow-hidden border border-transparent hover:border-[#E4751F]/30 transition-all duration-200"
+              className="group bg-[#F5F4F1] rounded-sm overflow-hidden border border-transparent hover:border-[#E4751F]/30 transition-all duration-200 flex flex-col h-full"
             >
               <div className="relative h-52 bg-white overflow-hidden">
                 <img
@@ -1157,13 +1157,13 @@ function Catalog() {
                   </span>
                 </div>
               </div>
-              <div className="p-4">
+              <div className="p-4 flex flex-col flex-1">
                 <div className="text-[#9CA3AF] text-xs font-medium uppercase tracking-wide mb-1">{product.brand}</div>
-                <h3 className="text-[#1C1F23] font-bold text-sm mb-2 leading-snug">{product.name}</h3>
+                <h3 className="text-[#1C1F23] font-bold text-sm mb-2 leading-snug line-clamp-2">{product.name}</h3>
                 <p className="text-[#6B7280] text-xs leading-relaxed mb-4 line-clamp-2">{product.desc}</p>
                 <button
                   onClick={() => openInquiry(product.name)}
-                  className="w-full bg-[#1C1F23] hover:bg-[#E4751F] text-white text-xs font-semibold py-2.5 px-3 rounded-sm transition-colors duration-200"
+                  className="w-full mt-auto bg-[#1C1F23] hover:bg-[#E4751F] text-white text-xs font-semibold py-2.5 px-3 rounded-sm transition-colors duration-200"
                 >
                   Consultar disponibilidad
                 </button>
@@ -1238,7 +1238,7 @@ function Wholesale() {
       />
       <div ref={revealRef} data-reveal className="relative max-w-7xl mx-auto px-5 md:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className="min-w-0">
             <span className="text-[#E4751F] text-xs font-semibold tracking-widest uppercase">Ventas al por mayor</span>
             <h2 className="text-white text-3xl md:text-4xl font-bold mt-3 mb-5 leading-tight">
               Soluciones para<br />tu negocio
@@ -1270,7 +1270,7 @@ function Wholesale() {
           </div>
 
           {/* Visual card */}
-          <div className="relative">
+          <div className="relative min-w-0">
             <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-[#E4751F]/30" />
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-[#E4751F]/30" />
             <div className="relative bg-[#2A2E34] rounded-sm overflow-hidden">
@@ -1289,8 +1289,8 @@ function Wholesale() {
                     { label: 'Modelo de negocio', value: 'B2B' },
                     { label: 'Cobertura', value: 'Colombia' },
                   ].map(s => (
-                    <div key={s.label}>
-                      <div className="text-[#E4751F] font-bold text-2xl">{s.value}</div>
+                    <div key={s.label} className="min-w-0">
+                      <div className="text-[#E4751F] font-bold text-2xl break-words">{s.value}</div>
                       <div className="text-white/50 text-xs mt-0.5">{s.label}</div>
                     </div>
                   ))}
@@ -1311,7 +1311,7 @@ function Distributors() {
       <div ref={revealRef} data-reveal className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="bg-white rounded-sm overflow-hidden">
           <div className="grid lg:grid-cols-2">
-            <div className="p-10 md:p-14">
+            <div className="p-10 md:p-14 min-w-0">
               <span className="text-[#E4751F] text-xs font-semibold tracking-widest uppercase">Distribuidores</span>
               <h2 className="text-[#1C1F23] text-3xl md:text-4xl font-bold mt-3 mb-5 leading-tight">
                 Conviértete en<br />distribuidor
@@ -1341,8 +1341,8 @@ function Distributors() {
             </div>
             <div className="relative overflow-hidden bg-[#1C1F23] min-h-64">
               <img
-                src="https://images.unsplash.com/photo-1565377167263-d29b5ac85479?w=700&h=600&fit=crop&auto=format"
-                alt="Distribución industrial"
+                src="https://images.unsplash.com/photo-1759790475932-ac8c04b17727?w=700&h=600&fit=crop&auto=format"
+                alt="Empaques y repuestos para distribución"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover opacity-50"
@@ -1403,7 +1403,7 @@ function About() {
           </div>
 
           {/* Text */}
-          <div>
+          <div className="min-w-0">
             <span className="text-[#E4751F] text-xs font-semibold tracking-widest uppercase">Quiénes somos</span>
             <h2 className="text-[#1C1F23] text-3xl md:text-4xl font-bold mt-3 mb-6 leading-tight">
               Fabricamos.<br />Distribuimos.<br />Abastecemos.
@@ -1478,7 +1478,7 @@ function Contact() {
     <section id="contacto" className="bg-[#F5F4F1] py-20">
       <div ref={revealRef} data-reveal className="max-w-7xl mx-auto px-5 md:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
-          <div>
+          <div className="min-w-0">
             <span className="text-[#E4751F] text-xs font-semibold tracking-widest uppercase">Contacto</span>
             <h2 className="text-[#1C1F23] text-3xl md:text-4xl font-bold mt-3 mb-6">Hablemos de tu negocio</h2>
             <p className="text-[#6B7280] text-lg mb-10">
@@ -1522,18 +1522,18 @@ function Contact() {
                   <div className="w-10 h-10 bg-white border border-[#E8E8E6] rounded-sm flex items-center justify-center flex-shrink-0 text-[#E4751F] group-hover:bg-[#E4751F] group-hover:text-white group-hover:border-[#E4751F] transition-colors duration-200">
                     {item.icon}
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-[#9CA3AF] text-xs font-medium mb-0.5">{item.label}</div>
                     {item.href ? (
                       <a
                         href={item.href}
                         {...(item.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                        className="text-[#1C1F23] font-medium hover:text-[#E4751F] transition-colors"
+                        className="text-[#1C1F23] font-medium hover:text-[#E4751F] transition-colors break-words"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <div className="text-[#1C1F23] font-medium">{item.value}</div>
+                      <div className="text-[#1C1F23] font-medium break-words">{item.value}</div>
                     )}
                   </div>
                 </div>
@@ -1565,7 +1565,7 @@ function Contact() {
           </div>
 
           {/* Form */}
-          <div className="bg-white rounded-sm p-8 md:p-10">
+          <div className="bg-white rounded-sm p-8 md:p-10 min-w-0">
             {sent ? (
               <div className="text-center py-10">
                 <div className="w-14 h-14 bg-[#E4751F]/10 rounded-sm flex items-center justify-center mx-auto mb-5">
@@ -1697,7 +1697,7 @@ function Footer() {
                   <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-[#E4751F] flex-shrink-0">
                     <path d="M3.505 2.365A41.369 41.369 0 0 1 9 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 0 0-.577-.069 43.141 43.141 0 0 0-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98C6.056 17.954 5.5 17.754 5.5 17.25V8.999c0-.184.093-.356.232-.467A4.49 4.49 0 0 1 7.5 7.5a4.49 4.49 0 0 1-2.5.999 4.44 4.44 0 0 1-2.495-1.001C2.2 7.226 2 6.809 2 6.375v-.012c0-1.768 1.338-3.215 3.005-3.352a4.44 4.44 0 0 1-.5-.646Z" />
                   </svg>
-                  WhatsApp
+                  <span className="min-w-0 break-words">WhatsApp</span>
                 </a>
               </li>
               <li>
@@ -1705,7 +1705,7 @@ function Footer() {
                   <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-[#E4751F] flex-shrink-0">
                     <path d="M3.505 2.365A41.369 41.369 0 0 1 9 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 0 0-.577-.069 43.141 43.141 0 0 0-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98C6.056 17.954 5.5 17.754 5.5 17.25V8.999c0-.184.093-.356.232-.467A4.49 4.49 0 0 1 7.5 7.5a4.49 4.49 0 0 1-2.5.999 4.44 4.44 0 0 1-2.495-1.001C2.2 7.226 2 6.809 2 6.375v-.012c0-1.768 1.338-3.215 3.005-3.352a4.44 4.44 0 0 1-.5-.646Z" />
                   </svg>
-                  {PHONE_DISPLAY}
+                  <span className="min-w-0 break-words">{PHONE_DISPLAY}</span>
                 </a>
               </li>
               <li>
@@ -1714,7 +1714,7 @@ function Footer() {
                     <path d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z" />
                     <path d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z" />
                   </svg>
-                  {EMAIL}
+                  <span className="min-w-0 break-words">{EMAIL}</span>
                 </a>
               </li>
               <li>
@@ -1722,7 +1722,7 @@ function Footer() {
                   <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 text-[#E4751F] flex-shrink-0 mt-0.5">
                     <path fillRule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.309-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clipRule="evenodd" />
                   </svg>
-                  {ADDRESS_FULL}
+                  <span className="min-w-0 break-words">{ADDRESS_FULL}</span>
                 </a>
               </li>
             </ul>
