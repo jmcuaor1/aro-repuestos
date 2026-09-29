@@ -144,3 +144,10 @@
 *.stl                filter=lfs diff=lfs merge=lfs -text
 *.nc                 filter=lfs diff=lfs merge=lfs -text
 *.mat                filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------------------------
+# Catalog product photos — small (~3.8MB total), tracked as regular git
+# binary files instead of LFS
+# ---------------------------------------------------------------------------
+public/licuadora/**/*.jpg    -filter -diff -merge -text
+public/olla-presion/**/*.jpg -filter -diff -merge -text
