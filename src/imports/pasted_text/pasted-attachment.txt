@@ -1,0 +1,429 @@
+Rediseña completamente el sitio web de ARO tomando como referencia visual y estructural el mockup anterior, pero corrigiendo el enfoque comercial según estos nuevos requerimientos.
+
+## CONTEXTO DEL NEGOCIO
+
+ARO es una empresa colombiana fabricante y distribuidora de repuestos para ollas a presión y licuadoras.
+
+Su modelo de negocio es B2B: vende repuestos AL POR MAYOR a distribuidores, ferreterías, negocios especializados, técnicos y otros compradores profesionales.
+
+IMPORTANTE:
+NO es una página de reparación.
+NO es una página para diagnosticar problemas de licuadoras u ollas.
+NO debe mostrar mensajes como "¿se te dañó la cuchilla?", "soluciona este problema" o contenido dirigido principalmente al consumidor final.
+NO debe posicionar a ARO como servicio técnico.
+
+El objetivo principal del sitio es presentar a ARO como FABRICANTE Y DISTRIBUIDOR DE REPUESTOS AL POR MAYOR.
+
+La página debe hacer que un visitante entienda en pocos segundos:
+
+"ARO fabrica y distribuye repuestos para licuadoras y ollas a presión, y realiza ventas al por mayor."
+
+---
+
+# IDENTIDAD VISUAL
+
+Mantener una estética industrial, moderna, profesional y confiable.
+
+Usar como colores principales:
+
+* Grafito: #1C1F23
+* Naranja: #E4751F
+* Blanco / gris muy claro para fondos
+
+Evitar:
+
+* Gradientes excesivos
+* Efectos 3D
+* Sombras exageradas
+* Estética infantil
+* Diseño de ecommerce genérico
+* Exceso de elementos decorativos
+
+La identidad debe transmitir fabricación, distribución, inventario, confianza y experiencia.
+
+Tipografía:
+
+* Poppins
+* Archivo
+* Inter
+
+Usar títulos fuertes, modernos y muy legibles.
+
+---
+
+# ESTRUCTURA DEL SITIO
+
+Crear un sitio web completo con las siguientes secciones:
+
+## 1. HEADER
+
+Header limpio y profesional.
+
+Logo ARO a la izquierda.
+
+Menú:
+
+* Inicio
+* Repuestos
+* Nosotros
+* Ventas al por mayor
+* Contacto
+
+Agregar un botón destacado:
+
+"Solicitar catálogo"
+
+o
+
+"Comprar al por mayor"
+
+El header debe ser responsive.
+
+---
+
+# 2. HERO PRINCIPAL
+
+El Hero debe dejar MUY claro el modelo de negocio.
+
+Título principal:
+
+"Repuestos para licuadoras y ollas a presión, al por mayor."
+
+Subtítulo:
+
+"Fabricamos y distribuimos repuestos para negocios, distribuidores y profesionales en Colombia."
+
+Agregar dos botones:
+
+"Ver repuestos"
+
+"Solicitar catálogo"
+
+Visualmente, mostrar una composición profesional de diferentes repuestos:
+
+* tapas
+* bases
+* cuchillas
+* empaques
+* componentes de licuadoras
+* componentes de ollas a presión
+
+Las imágenes deben parecer fotografías reales de productos industriales.
+
+No mostrar una licuadora rota ni una olla dañada.
+
+La sensación debe ser de CATÁLOGO / INVENTARIO / DISTRIBUCIÓN.
+
+---
+
+# 3. BARRA DE CONFIANZA
+
+Debajo del Hero, crear una sección horizontal con 3 o 4 atributos:
+
+"Fabricantes"
+
+"Distribución al por mayor"
+
+"Repuestos especializados"
+
+"Atención para negocios y distribuidores"
+
+Diseño minimalista con iconos lineales.
+
+---
+
+# 4. CATEGORÍAS DE PRODUCTOS
+
+Crear una sección llamada:
+
+"Nuestro catálogo"
+
+Subtítulo:
+
+"Repuestos para licuadoras y ollas a presión."
+
+Mostrar tarjetas de categorías.
+
+Categorías:
+
+### Licuadoras
+
+* Cuchillas
+* Bases
+* Vasos y tapas
+* Acoples
+* Otros repuestos
+
+### Ollas a presión
+
+* Empaques
+* Tapas
+* Válvulas
+* Fusibles
+* Bases y accesorios
+
+Las categorías deben funcionar como filtros o enlaces hacia el catálogo.
+
+---
+
+# 5. CATÁLOGO DE REPUESTOS
+
+Esta es una de las secciones MÁS IMPORTANTES del sitio.
+
+Crear un catálogo visual tipo grid.
+
+Cada producto debe tener:
+
+* fotografía
+* nombre del repuesto
+* categoría
+* referencia, si existe
+* botón "Consultar disponibilidad"
+
+NO mostrar necesariamente precios.
+
+El objetivo es que el comprador mayorista vea el producto y contacte a ARO.
+
+Ejemplos:
+
+"Cuchilla para licuadora"
+
+"Base para licuadora"
+
+"Tapa para olla a presión"
+
+"Empaque para olla a presión"
+
+"Válvula de seguridad"
+
+"Fusible"
+
+"Acople"
+
+Cada tarjeta debe tener una estructura preparada para que posteriormente el administrador pueda CAMBIAR fácilmente:
+
+* fotografía
+* nombre
+* referencia
+* descripción
+* categoría
+
+IMPORTANTE: las fotografías utilizadas en el mockup son únicamente imágenes de ejemplo. El sistema debe estar diseñado para permitir reemplazarlas posteriormente por las fotografías reales de ARO.
+
+---
+
+# 6. SECCIÓN "VENTA AL POR MAYOR"
+
+Crear una sección visualmente fuerte enfocada exclusivamente en compradores profesionales.
+
+Título:
+
+"Soluciones para tu negocio"
+
+Texto:
+
+"Abastecemos negocios, distribuidores y profesionales con repuestos para licuadoras y ollas a presión."
+
+Mostrar beneficios como:
+
+* Venta al por mayor
+* Variedad de referencias
+* Fabricación y distribución
+* Atención comercial
+* Catálogo actualizado
+
+Agregar CTA:
+
+"Quiero comprar al por mayor"
+
+---
+
+# 7. SECCIÓN PARA DISTRIBUIDORES
+
+Crear una sección específica para captar distribuidores.
+
+Título:
+
+"Conviértete en distribuidor"
+
+Texto:
+
+"Encuentra en ARO un aliado para abastecer tu negocio con repuestos de alta rotación para licuadoras y ollas a presión."
+
+Agregar botón:
+
+"Hablar con un asesor"
+
+La intención es captar clientes B2B.
+
+---
+
+# 8. NOSOTROS
+
+Crear una sección institucional.
+
+Título:
+
+"Fabricamos. Distribuimos. Abastecemos."
+
+Explicar brevemente que ARO trabaja en la fabricación y distribución de repuestos para licuadoras y ollas a presión.
+
+La sección debe transmitir:
+
+* experiencia
+* capacidad de distribución
+* conocimiento del sector
+* atención comercial
+* enfoque mayorista
+
+Evitar inventar años de experiencia, cantidades de productos, cobertura nacional o certificaciones que no hayan sido proporcionadas.
+
+---
+
+# 9. CTA FINAL
+
+Crear una sección grande de conversión.
+
+Título:
+
+"¿Buscas un proveedor de repuestos?"
+
+Texto:
+
+"Solicita nuestro catálogo y conoce las referencias disponibles para tu negocio."
+
+Botones:
+
+"Solicitar catálogo"
+
+"Contactar por WhatsApp"
+
+---
+
+# 10. FOOTER
+
+Footer profesional.
+
+Logo ARO.
+
+Texto:
+
+"Fabricantes y distribuidores de repuestos para licuadoras y ollas a presión."
+
+Columnas:
+
+Empresa
+
+* Nosotros
+* Ventas al por mayor
+* Contacto
+
+Productos
+
+* Repuestos para licuadoras
+* Repuestos para ollas a presión
+
+Contacto
+
+* WhatsApp
+* Teléfono
+* Correo
+* Ubicación
+
+Agregar redes sociales si posteriormente se proporcionan.
+
+---
+
+# EXPERIENCIA DEL USUARIO
+
+La navegación debe estar diseñada pensando principalmente en un comprador mayorista.
+
+El recorrido ideal debe ser:
+
+INICIO
+→ conocer ARO
+→ ver categorías
+→ explorar repuestos
+→ identificar referencias
+→ solicitar catálogo / contactar
+→ compra mayorista
+
+No crear un flujo basado en:
+
+"tengo un problema → diagnosticarlo → encontrar una solución".
+
+El visitante debe sentir que está entrando al sitio web de un PROVEEDOR / FABRICANTE, no a una página de servicio técnico.
+
+---
+
+# ESTILO DE LAS FOTOGRAFÍAS
+
+Utilizar fotografías de producto limpias y profesionales.
+
+Preferiblemente:
+
+* fondo blanco o neutro
+* iluminación uniforme
+* producto centrado
+* alta nitidez
+* diferentes ángulos cuando sea apropiado
+
+No utilizar imágenes de electrodomésticos dañados.
+
+El producto debe ser el protagonista.
+
+---
+
+# COMPONENTES INTERACTIVOS
+
+Agregar:
+
+* búsqueda de productos
+* filtros por categoría
+* tarjetas de producto
+* botones de consulta
+* CTA hacia WhatsApp
+* formulario de contacto
+* botón para solicitar catálogo
+
+El catálogo debe estar preparado conceptualmente para que el cliente pueda reemplazar fotografías y actualizar productos sin tener que rediseñar toda la página.
+
+---
+
+# RESPONSIVE
+
+Diseñar cuidadosamente:
+
+Desktop
+Tablet
+Mobile
+
+En móvil:
+
+* menú hamburguesa
+* tarjetas de productos en una columna o grid de 2 columnas según espacio
+* botones grandes
+* CTA de WhatsApp visible
+* navegación sencilla
+
+---
+
+# RESULTADO ESPERADO
+
+El resultado debe verse como una empresa REAL de fabricación y distribución B2B.
+
+Debe transmitir:
+
+INDUSTRIA + CONFIANZA + PRODUCTO + DISTRIBUCIÓN + VENTA MAYORISTA.
+
+La prioridad visual debe ser:
+
+1. Qué vende ARO
+2. Que vende AL POR MAYOR
+3. Qué productos tiene
+4. Que es fabricante/distribuidor
+5. Cómo contactar o solicitar catálogo
+
+No convertir el sitio en un ecommerce tradicional con carrito y checkout.
+
+La conversión principal debe ser CONTACTAR / SOLICITAR CATÁLOGO / COMPRAR AL POR MAYOR.

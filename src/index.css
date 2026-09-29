@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Archivo:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-grafito: #1C1F23;
+  --color-grafito-light: #2A2E34;
+  --color-naranja: #E4751F;
+  --color-naranja-dark: #C45F0F;
+  --color-naranja-light: #F4915A;
+  --color-cream: #F5F4F1;
+  --color-gris: #6B7280;
+  --color-gris-light: #E8E8E6;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Archivo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  background-color: #F5F4F1;
+  color: #1C1F23;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F4F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E4751F;
+  border-radius: 3px;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll-reveal for section content */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated open/close for native <dialog> */
+dialog {
+  opacity: 0;
+  transform: scale(0.96) translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, overlay 0.2s ease allow-discrete, display 0.2s ease allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0);
+  transition: background-color 0.2s ease allow-discrete;
+}
+
+dialog[open]::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  dialog[open]::backdrop {
+    background-color: rgb(0 0 0 / 0);
+  }
+}
+
+/* Keyboard focus ring, consistent with the brand accent */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #e4751f;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  dialog {
+    transition: none;
+  }
+}

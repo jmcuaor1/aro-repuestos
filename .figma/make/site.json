@@ -1,0 +1,18 @@
+{
+  "title": "ARO — Repuestos para licuadoras y ollas a presión al por mayor",
+  "description": "ARO fabrica y distribuye repuestos para licuadoras y ollas a presión al por mayor en Colombia. Cuchillas, bases, empaques, válvulas y más para distribuidores y negocios.",
+  "language": "es",
+  "robots": {
+    "index": true
+  },
+  "icons": {
+    "icon": "/favicon.svg"
+  },
+  "openGraph": {
+    "image": "https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?w=1200&h=630&fit=crop&auto=format"
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
